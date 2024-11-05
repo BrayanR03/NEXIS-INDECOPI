@@ -1,0 +1,610 @@
+/*Estilos Tipo Documento, Documento, Usuario */
+
+.containerRegistroTipoDocumento,
+.containerRegistroDocumento,
+.containerRegistroUsuario{
+    width: 600px;
+    max-width: 600px;
+    height: fit-content;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+.containerRegistroUsuario{
+    margin-top: 0;
+    width: 800px;
+    max-width: 800px;
+}
+
+.containerRegistroUsuario .body form .data{
+    display: flex;
+    gap: 20px;
+
+}
+
+.containerRegistroTipoDocumento h2,
+.containerRegistroDocumento h2,
+.containerRegistroUsuario h2{
+    margin-bottom: 20px;
+    background-color: var(--bg-color-principal);
+    padding: 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.containerRegistroUsuario h2{
+    margin: 0;
+}
+
+.containerRegistroTipoDocumento .body,
+.containerRegistroDocumento .body,
+.containerRegistroUsuario .body{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+}
+
+.containerRegistroUsuario .body{
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.containerRegistroDocumento .body,
+.containerRegistroUsuario .body{
+    flex-direction: column;
+}
+
+.containerRegistroDocumento .body .row,
+.containerRegistroUsuario .body .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.containerRegistroUsuario .body .row{
+    gap: 10px;
+}
+
+.containerRegistroDocumento .body .row div,
+.containerRegistroUsuario .body .row div{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerRegistroUsuario .body .row div{
+    margin-bottom: 5px;
+}
+
+.containerRegistroTipoDocumento .body input,
+.containerRegistroDocumento .body .row input,
+.containerRegistroDocumento .body .row select,
+.containerRegistroUsuario .body .row select,
+.containerRegistroUsuario .body .row input,
+.containerRegistroUsuario .body .column select{
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.containerRegistroDocumento .body .row input[type="date"]{
+    width: 227.6px;
+}
+
+.containerRegistroDocumento .body .row:last-child,
+.containerRegistroUsuario .body .row:last-child{
+    justify-content: left;
+}
+
+.containerRegistroDocumento .body input[type="submit"]{
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    background-color: var(--bg-color-principal);
+    color: #fff;
+    margin-top: 30px;
+}
+
+.containerRegistroUsuario .body input[type="submit"]{
+    margin-top: 20px
+}
+
+
+.containerRegistroDocumento .body .row select,
+.containerRegistroUsuario .body .row select{
+    width: 227.6px;
+}
+
+.containerRegistroTipoDocumento .body label:first-child{
+    flex: 1;
+}
+
+.containerRegistroTipoDocumento .body input:last-child{
+    flex: 2;
+    margin: 0;
+}
+
+.containerRegistroTipoDocumento input[type="submit"],
+.containerRegistroUsuario input[type="submit"]{
+    cursor: pointer;
+    background-color: var(--bg-color-principal);
+    color: #fff;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+
+.modalArea .containerButtonsEditarArea{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.modalArea .modal-header{
+    background-color: var(--bg-color-principal);
+    color: #fff;
+}
+
+.modalArea .formArea .modal-body input{
+    background: rgb(221 221 221 / 44%);
+}
+
+.modalArea .formArea .modal-body p{
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.modalArea .containerButtonsEditarArea input[type="submit"]{
+    background-color: var(--bg-color-principal);
+    color: #fff;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.modalArea .containerButtonsEditarArea button{
+    width: 50%;
+    background-color: #F12A2A;
+}
+
+.asuntoDocumento{
+    width: 250px;
+    display: table-caption;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.observacionEnvio{
+    width: 150px;
+    display: table-caption;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Estilos de registro error */
+.containerMensajeRegistro{
+    width: 100%;
+    background-color: #ffffff;
+    height: min-content;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: -1px 12px 77px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 12px 77px -27px rgba(0,0,0,0.75);
+    box-shadow: -1px 12px 77px -27px rgba(0,0,0,0.75);
+}
+
+.containerMensajeRegistro .header{
+    width: 300px;
+    background-color: transparent;
+}
+
+.containerMensajeRegistro .body{
+    background-color: #c9c9c9;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+}
+
+.containerMensajeRegistro .body p{
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    /*margin-bottom: 10px;*/
+}
+
+.containerMensajeRegistro .body a{
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: var(--bg-color-principal);
+}
+
+.new {
+    background-color: #fff;
+    border: 1px solid #4b4b4b;
+}
+
+.invisible{
+    display: none;
+}
+
+.mensajeSinRegistros{
+    font-size: 20px;
+    padding: 30px !important;
+}
+
+/* Estilos para los estados de los documentos */
+
+.pendienteRecepcion{
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: #6bc8fc;
+    border: 1px solid #107fbd;
+}
+
+.recepcionado{
+    background-color: #09dc50;
+    border: 1px solid #059133;
+}
+
+.mt-5{
+    margin-top: 5px;
+}
+
+.description_btnNuevoDocumento{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.btnNuevoRegistro{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--bg-color-principal);
+    padding: 12px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.btnNuevoRegistro svg{
+    width: 15px;
+}
+
+/* Estilos vista seguimiento documento */
+.infoGeneral{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.infoGeneral span{
+    margin-left: 10px;
+}
+
+.infoGeneral div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.infoGeneral .containerInfoDoc p{
+    margin-bottom: 0;
+}
+
+.infoGeneral .containerInfoDoc p:first-child span{
+    color: #FF0000;
+}
+
+.infoGeneral .containerInfoDoc p:last-child span{
+    font-weight: 300;
+}
+
+.infoGeneral .containerInfoDoc p:nth-child(2) span{
+    font-weight: 400;
+}
+
+.infoGeneral .containerEstadoDoc p span{
+    font-weight: 400;
+}
+
+.columArrow{
+    background-color: #E6E6E6;
+    width: 40px !important;
+}
+
+.columArrow svg{
+    width: 20px;
+}
+
+/* Estilos detalleEnvio */
+
+.containerDetalle{
+    width: max-content;
+}
+
+.detalle{
+    border-radius: 10px;
+}
+
+.datosOrigen,
+.datosDestino,
+.containerObservacion{
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.datosOrigen{
+    margin: 0;
+}
+
+.datosOrigenHeader,
+.datosDestinoHeader{
+    background-color: var(--bg-color-principal);
+    color: #fff;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.datosOrigenHeader h3,
+.datosDestinoHeader h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.detalle .datosOrigenBody div,
+.detalle .datosDestinoBody div{
+    display: flex;
+    align-items: center;
+}
+
+.detalle .estadosDetalle{
+    display: flex;
+    gap: 10px;
+}
+
+.detalle .datosOrigenBody div label,
+.detalle .datosDestinoBody div label{
+    flex: 150px;
+}
+
+.detalle .datosOrigenBody div input,
+.detalle .datosDestinoBody div input{
+    margin: 0;
+}
+
+.detalle .datosOrigenBody,
+.detalle .datosDestinoBody{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 450px 300px 200px;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.detalle input[name="horaRecepcion"],
+.detalle input[name="horaEnvio"]{
+    width: 100px;
+}
+
+.detalle .containerArrowDetalle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.detalle .arrowDetalle{
+    width: 30px;
+}
+
+textarea{
+    overflow-y: scroll;
+}
+
+.detalle .containerObservacion{
+    padding: 10px;
+}
+
+.detalle .containerObservacion div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detalle .containerObservacion div label{
+     flex: 1;
+}
+
+.detalle .containerObservacion div textarea{
+    flex: 8;
+    height: 80px;
+    resize: none;
+    text-align: left;
+}
+
+.detalle div:last-child{
+    margin-bottom: 0;
+}
+
+.enviado{
+    background-color: darkkhaki;
+    border: 1px solid #85813e;
+}
+
+
+.containerEstadoDoc p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+/*cambiar area usuario formulario*/
+.containerCambiarAreaUsuario{
+    width: 600px;
+    max-width: 600px;
+    height: fit-content;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+.containerCambiarAreaUsuario{
+    margin-top: 0;
+    width: 400px;
+    max-width: 400px;
+
+}
+
+.containerCambiarAreaUsuario .body form{
+    display: flex;
+    gap: 20px;
+}
+
+.containerCambiarAreaUsuario h2{
+    margin-bottom: 20px;
+    background-color: var(--bg-color-principal);
+    padding: 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.containerCambiarAreaUsuario input[type="submit"],
+.containerCambiarAreaUsuario a{
+    cursor: pointer;
+    background-color: var(--bg-color-principal);
+    color: #fff;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.containerCambiarAreaUsuario .btnCambiarAreaUsuario a{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.containerCambiarAreaUsuario .btnCambiarAreaUsuario{
+    display: flex;
+}
+
+/* Estilos para modal enviar documento */
+.containerCamposEnvio>div{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.containerCamposEnvio>div input{
+    margin: 0;
+}
+
+.containerCamposEnvio>div select{
+    background: rgb(221 221 221 / 44%);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.containerCamposEnvio>div select:focus-visible{
+    outline: none;
+}
+
+.containerCamposEnvio textarea{
+    height: 150px;
+    resize: none;
+}
+
+.btnCerrarModal{
+    border: none;
+    margin: auto;
+    padding: 7px 25px;
+    background-color: #F12A2A;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#bodySeguimiento, #bodyListaDocumentos, #bodyPendientesRecepcion{
+    font-weight: 500;
+}
+
+.actionsDocumentos, .actionPendientesRecepcion, .actionsEnviados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.optionVerSeguimiento, .optionDetalleEnviados{
+    grid-column: 3/4;
+}
+
+.actionCulminarDocumento{
+    grid-column: 2/3;
+}
+
+.optionVerSeguimientoEnviados{
+    grid-column: 2/3;
+}
+
+.actionsRecepcionados, .actionsUsuarios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.actionVerSeguimientoRecepcionados{
+    grid-column: 3/4;
+}
+
+.actionVerDetalleRecepcionados{
+    grid-column: 4/5;
+}
+
+.actionDeshabilitarUsuario{
+    grid-column: 4/5;
+}
+
+#bodyListaUsuarios, #bodyListaDocumentosPorArea, #bodyListaDocumentosPorUsuario, #bodyRecepcionados, #bodyEnviadosReporte{
+    font-weight: 500;
+}
+
+.btnCulminarSeguimiento{
+    display: flex;
+    align-items: center;
+    background-color: #fa7575;
+    padding: 5px 12px;
+    font-weight: 500;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    height: fit-content;
+}
+
