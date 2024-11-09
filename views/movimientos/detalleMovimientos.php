@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="containerButtonsEditarArea">
-                    <input style="background-color: #006B2D;" id="btnDescargarDocumento" type="button" class="btn" value="Descargar Documento">
+                    <input style="background-color: #006B2D;color:white" id="btnDescargarDocumento" type="button" class="btn"  value="Descargar Documento">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
                 <!-- <input style="background-color: #006B2D;" type="submit" class="btn" value="Registrar">

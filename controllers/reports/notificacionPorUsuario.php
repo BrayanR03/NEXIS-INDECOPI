@@ -36,7 +36,7 @@ class PDF extends FPDF
         $this->Cell(35, 5, 'Hora  :  ' . $this->horaActual, 0, 0, 'L', 0);
 
         $this->SetFont('Arial', 'B', 20);
-        $this->Image('../../assets/btnLogoMuni.png', 5, 2, 35);
+        $this->Image('../../assets/logo-sinoe.png', 5, 2, 35);
         $this->SetXY(80, 12);
 
         $this->Cell(150, 15, mb_convert_encoding('REPORTE DE NOTIFICACIÓN', 'ISO-8859-1', 'UTF-8'), 0, 1, 'C', 0);
@@ -99,9 +99,10 @@ class PDF extends FPDF
         }
         $this->Ln(5);
         $this->Cell(12, 6, 'Sede:', 0, 0);
-        foreach ($response['data'] as $movimiento) {
-            $this->Cell(80, 6, $movimiento['Sede'], 0, 0);
-        }
+        $this->Cell(80, 6, 'Sede Principal', 0, 0);
+        // foreach ($response['data'] as $movimiento) {
+        //     $this->Cell(80, 6, $movimiento['Sede'], 0, 0);
+        // }
         //  $this->Ln(5);
 
         // Datos del Usuario Notificado

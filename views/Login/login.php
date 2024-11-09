@@ -56,8 +56,9 @@ require_once __DIR__ . "/../../views/personas/registrarPersonas.php";
                 </div>
             </div>
         </div>
-        <!-- <footer class="footer-login-sinoe">
-        </footer> -->
+        <footer class="footer-login-sinoe">
+        Recuerda revisar tus notificaciones electrónicas para mantenerte informado y al día con nuestras últimas actualizaciones y servicios.
+        </footer>
     </div>
     <?php require_once "validacionDobleFactor.php"?>
     <script src="<?= base_url ?>ajax/login.js"></script>
